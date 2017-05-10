@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title> Course Project: Homepage </title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="styles/custom.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="themes/themeproject.min.css" />
+  <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+</head>
+
+
+<div id="homepage" data-role="page" data-theme="a" data-add-back-btn="true">
+  <div data-role="header" data-theme="a">
+	  <div class="logo"><img src="images/logo.jpg" width="100%" height="175" alt="logo image" /></div>
+	</div>
+    <div data-role="panel" id="myPanel">
+			<h2>Quick Navigation</h2>
+			<ul data-role="listview" data-theme="a">
+        <li data-icon="home" class="menu"><a href="#homepage"> Homepage </a></li>
+				<li data-icon="user" class="menu"><a href="#about"> About Me </a></li>
+				<li data-icon="star" class="menu"><a href="#favorites"> Favorites List </a></li>
+				<li data-icon="eye" class="menu"><a href="#picture"> Picture Grid </a></li>
+				<li data-icon="mail" class="menu"><a href="#comments"> Comments Form </a></li>
+			</ul>
+			<h3> Exit the panel by clicking outside of it, pressing the Esc key, or by swiping. </h3>
+</div>
+
+  <div data-role="header">
+    <h1> Homepage </h1>
+  </div>
+
+  	<div data-role="content">
+  		<ul data-role="listview" class="ui-content" data-theme="a" data-filter="true">
+  			<a href="#myPanel" class="ui-btn ui-btn-inline ui-icon-navigation ui-btn-icon-right">Open Navi Panel</a>
+        <li data-icon="user" class="menu"><a href="#about"> About Me </a></li>
+				<li data-icon="star" class="menu"><a href="#favorites"> Favorites List </a></li>
+				<li data-icon="eye" class="menu"><a href="#picture"> Picture Grid </a></li>
+				<li data-icon="mail" class="menu"><a href="#comments"> Comments Form </a></li>
+  		</ul>
+  	</div>
+
+  	<div data-role="footer" data-theme="a">
+  	  <h4> The Banhi Banhi Box &copy; 2017</h4>
+  	</div>
+  </div>
+
+  <div id="about" data-role="page" data-theme="a" data-add-back-btn="true" data-transition="flip">
+  	<div data-role="header" data-theme="a" data-add-back-btn="true">
+  	  <h1> About Me </h1>
+  	</div>
+
+  	<div data-role="content">
+  	  <h3> Welcome to my page! </h3>
+  	  <p> I'm currently a student at Rasmussen College, learning how to be a software developer! Some things I like to do in my free time are play
+        video games, sleep, and experience new things! I'm very open to new experiences and love learning new things! </p>
+        <hr>
+      <h3> Video games you say?!? </h3>
+      <p> Yes! Some of the genres I like to play are MMO's, JRPG's, and occasionally shooters! </p>
+
+  	</div>
+
+  	<div data-role="footer" data-theme="a">
+  	  <h4> The Banhi Banhi Box &copy; 2017 </h4>
+  	</div>
+  </div>
+
+  <div id="favorites" data-role="page" data-theme="a" data-add-back-btn="true" data-transition="flip">
+  	<div data-role="header" data-theme="a" data-add-back-btn="true">
+  		<h1> Favorites List </h1>
+  	</div>
+  	<div data-role="content">
+      <h3> This is the favorites list, where you can see 5 of my favorite things! </h3>
+      <p> Along with the list of my favorite things, you can submit yours at the bottom! </p>
+
+      <hr>
+
+      <legend> The List! </legend>
+      <ul style="list-style-type:disc">
+        <li> Video games </li>
+        <li> Sleeping </li>
+        <li> Technology </li>
+        <li> Cats </li>
+        <li> YouTube and Twitch </li>
+      </ul>
+
+      <hr>
+
+      <form action="form.php" method="post">
+        <label for="favpost"> Post your favorite thing:</label>
+          <input type="text" name="favpost" id="favpost" placeholder="Type it here!">
+          <input type="submit" value="I'm done!">
+      </form>
+
+  	</div>
+  	<div data-role="footer" data-theme="a">
+  		<h4> The Banhi Banhi Box &copy; 2017 </h4>
+  	</div>
+  </div>
+
+  <div id="picture" data-role="page" data-theme="a" data-add-back-btn="true" data-transition="flip">
+  	<div data-role="header" data-theme="a" data-add-back-btn="true">
+  		<h1> Picture Grid </h1>
+  	</div>
+  	<div data-role="content" data-add-back-btn="true">
+      <div class="ui-grid-solo">
+        <div class="ui-block-a ui-responsive"><div class="ui-bar ui-bar-a"><img src="images/smug.png" width="250" height="250" alt="smug.png"> Smug Nepu </div></div>
+        <div class="ui-block-a ui-responsive"><div class="ui-bar ui-bar-a"><img src="images/karen.jpg" width="250" height="250" alt="karen.jpg"> Karen </div></div>
+        <div class="ui-block-a ui-responsive"><div class="ui-bar ui-bar-a"><img src="images/noire.jpg" width="250" height="250" alt="noire.jpg"> Noire </div></div>
+        <div class="ui-block-a ui-responsive"><div class="ui-bar ui-bar-a"><img src="images/sakura.png" width="250" height="250" alt="sakura.png"> Futaba Sakura </div></div>
+        <div class="ui-block-a ui-responsive"><div class="ui-bar ui-bar-a"><img src="images/skal.png" width="250" height="250" alt="skal.png"> S'kalkaya </div></div>
+      </div>
+    </div>
+  	<div data-role="footer" data-theme="a" >
+  	  <h4> The Banhi Banhi Box &copy; 2017 </h4>
+  	</div>
+  </div>
+
+  <div id="comments" data-role="page" data-theme="a" data-add-back-btn="true" data-transition="flip">
+  	<div data-role="header" data-theme="a" data-add-back-btn="true">
+  		<h1> Comments Form </h1>
+  	</div>
+    <div data-role="content">
+      <h3> This is the comments page, where you can answer the questions to make your opinion of the site known! </h3>
+      <p> Please answer all the questions below honestly so we can make the site better! </p>
+
+        <hr>
+
+      <form action="form.php" method="post">
+
+        <label for="contact"> Leave a way to contact you: </label>
+          <input type="text" name="contact" id="contact" placeholder="Optional, in case we have question for you.">
+
+          <hr>
+
+        <label for="freecomm"> Make your comments known here! </label>
+          <textarea cols="40" rows="8" name="freecomm" id="freecom" placeholder="Type freely, we don't mind!"></textarea>
+
+          <hr>
+
+        <p> Select the option that best fits your opinion: </p>
+        <select name="pref">
+          <option value="excellent"> It's excellent! </option>
+          <option value="good" selected> It's good. </option>
+          <option value="neutral"> I don't mind </option>
+          <option value="improvement"> Improvements are needed. </option>
+          <option value="bad"> It's bad. </option>
+        </select>
+
+        <hr>
+
+        <legend> Would you use this site again? </legend>
+          <input type="radio" name="radio-choice-v-2" id="radio-choice-v-2a" value="on" checked="yes">
+          <label for="radio-choice-v-2a"> Yes! </label>
+          <input type="radio" name="radio-choice-v-2" id="radio-choice-v-2b" value="off">
+          <label for="radio-choice-v-2b"> Nope. </label>
+          <input type="radio" name="radio-choice-v-2" id="radio-choice-v-2c" value="other">
+          <label for="radio-choice-v-2c"> Maybe, if it improves. </label>
+
+        <hr>
+
+        <label for="slider-2"> On a scale of 1 to 10, how likely are you to recommend this site to someone else? </label>
+          <input type="range" name="slider-2" id="slider-2" value="5" min="0" max="10" data-highlight="true">
+
+        <hr>
+
+        <label for="submission">Submit your answers:</label>
+          <button class="ui-shadow ui-btn ui-corner-all" type="submit" id="submission"> I'm done! </button>
+
+      </form>
+
+
+    </div>
+
+    <script>
+    (function() {
+    	var rasm = document.querySelector('.localstorage');
+      var comm = localstorage.getItem('comments');
+      var fave = localstorage.getItem('favorites');
+      document.getElementById('comments').value = currentComments;
+      document.getElementById('favorites').value = currentFavorites;
+      function populateStorage() {
+        localStorage.setItem('comments', document.getElementById('comments').value);
+        localStorage.setItem('favorites', document.getElementById('favorites').value);
+      }
+    	function supportsLocalStorage() {
+    		return typeof(Storage)!== 'undefined';
+    	}
+    	if (!supportsLocalStorage()) {
+    		rasm.value = 'Your browser does not support localStorage.';
+    	} else {
+    		try {
+    			setInterval(function() {
+    				localStorage.setItem('autosave', rasm.value);
+    			}, 1000);
+    		} catch (e) {
+    			if (e == QUOTA_EXCEEDED_ERR) {
+    				alert('Quota exceeded!');
+    			}
+    		}
+    		if (localStorage.getItem('autosave')) {
+    			rasm.value = localStorage.getItem('autosave');
+    		}
+    		document.querySelector('.clear').onclick = function() {
+    			rasm.value = '';
+    			localStorage.removeItem('autosave');
+    		};
+    		document.querySelector('.empty').onclick = function() {
+    			rasm.value = '';
+    			localStorage.clear();
+    		};
+    	}
+    })();
+    </script>
