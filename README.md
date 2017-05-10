@@ -31,4 +31,4 @@ Overall Flow:
 - Bells and whistles kept to a minimum to avoid distractions from the main content
 
 # GitHub Page URL
-wip
+https://banhi-banhi.github.io/Homepage-Project/
